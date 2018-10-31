@@ -34495,3 +34495,153 @@ Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrad
 Registered connection (Z2lkOi8vd2Fsa2VyLWdyb3VwL1VzZXIvMQ)
 CommentsChannel is transmitting the subscription confirmation
 CommentsChannel is streaming from comments
+Started GET "/" for 94.1.248.117 at 2018-10-31 17:26:17 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered pages/home.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navbar.html.erb (10.0ms)
+  Rendered layouts/_flash.html.erb (1.1ms)
+Completed 200 OK in 90ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 94.1.248.117 at 2018-10-31 17:26:17 +0000
+CommentsChannel stopped streaming from comments
+Started GET "/cable" for 94.1.248.117 at 2018-10-31 17:26:18 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 94.1.248.117 at 2018-10-31 17:26:18 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vd2Fsa2VyLWdyb3VwL1VzZXIvMQ)
+CommentsChannel is transmitting the subscription confirmation
+CommentsChannel is streaming from comments
+Started GET "/login" for 94.1.248.117 at 2018-10-31 17:26:21 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered layouts/_footer.html.erb (0.8ms)
+  Rendered sessions/new.html.erb within layouts/application (41.7ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 94.1.248.117 at 2018-10-31 17:26:32 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x5Yv//vH+QZTGiIM246pY5n86FP5r5adI7+qIcv1+cPaIC1Tm13EM5cq7upN6R7VXGDggpXAOkqpX6qG9gEYDA==", "session"=>{"email"=>"vincethewalker@yahoo.co.uk", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "vincethewalker@yahoo.co.uk"], ["LIMIT", 1]]
+Redirected to https://mashurs-tutorials-vincethewalker.c9users.io/users/1
+Completed 302 Found in 78ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for 94.1.248.117 at 2018-10-31 17:26:33 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered users/show.html.erb within layouts/application (48.6ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 89ms (Views: 83.7ms | ActiveRecord: 1.2ms)
+
+
+Finished "/cable/" [WebSocket] for 94.1.248.117 at 2018-10-31 17:26:33 +0000
+CommentsChannel stopped streaming from comments
+Started GET "/cable" for 94.1.248.117 at 2018-10-31 17:26:33 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 94.1.248.117 at 2018-10-31 17:26:33 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vd2Fsa2VyLWdyb3VwL1VzZXIvMQ)
+CommentsChannel is transmitting the subscription confirmation
+CommentsChannel is streaming from comments
+Started GET "/users" for 94.1.248.117 at 2018-10-31 17:26:37 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 48ms (Views: 43.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/topics/new" for 94.1.248.117 at 2018-10-31 17:26:45 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering topics/new.html.erb within layouts/application
+  Rendered topics/_errors.html.erb (0.9ms)
+  Rendered topics/_form.html.erb (8.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered topics/new.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_navbar.html.erb (2.0ms)
+  Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 60ms (Views: 50.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/topics" for 94.1.248.117 at 2018-10-31 17:26:48 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT "topics".* FROM "topics"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."topic_id" = ?[0m  [["topic_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."topic_id" = ?[0m  [["topic_id", 11]]
+  Rendered topics/index.html.erb within layouts/application (29.9ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+  Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 67ms (Views: 63.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 94.1.248.117 at 2018-10-31 17:26:52 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.3ms)
+  Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/login" for 94.1.248.117 at 2018-10-31 17:26:56 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ku6c34RH3zDHdhu1lwWERNfTtOHgtrTce4ndTWfVzNBL31fIVmm+FV6ClBVFuDeG0ANgga7WUq3+ktVlQWSKWw=="}
+Redirected to https://mashurs-tutorials-vincethewalker.c9users.io/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 94.1.248.117 at 2018-10-31 17:26:57 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 94.1.248.117 at 2018-10-31 17:26:57 +0000
+CommentsChannel stopped streaming from comments
+Started GET "/cable" for 94.1.248.117 at 2018-10-31 17:26:57 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 94.1.248.117 at 2018-10-31 17:26:57 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vd2Fsa2VyLWdyb3VwL1VzZXIvMQ)
+CommentsChannel is transmitting the subscription confirmation
+CommentsChannel is streaming from comments
