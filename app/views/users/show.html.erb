@@ -1,0 +1,31 @@
+<div class="well">
+  <h2 align="center"><%= @user.name %></h2>
+</div>
+
+<div align="center">
+  <div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="well">
+      <p align="center"><%= image_tag @user.picture.url, class: "showImage" if @user.picture? %></p>
+      <br />
+      <h5>
+        Email: <%= @user.email %>
+      </h5>
+      <% if @user.topics.count !=0 %>
+        <h6>Blogs created: <%= @user.topics.count %></h6>
+      <% else %>
+        <h5>You haven't created any blogs yet...</h5>
+      <% end %>
+      
+      <p><%= link_to "All Users", users_path, class: "btn btn-primary bttn" %>
+         <%= link_to "Edit", edit_user_path, class: "btn btn-warning bttn" %>
+         <%= link_to "Create A Blog", new_topic_path, class: "btn btn-success bttn" %>
+         <% if logged_in? && current_user.admin?%>
+           <%= link_to "Delete", user_path(@user), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger bttn" %>
+         <% end %>
+         </p>
+    </div>
+  </div>
+</div>
+</div>
+<%= render 'layouts/footer' %>

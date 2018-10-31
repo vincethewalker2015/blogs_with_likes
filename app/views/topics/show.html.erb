@@ -1,0 +1,41 @@
+<div class="well">
+  <h2 align="center">This Blog</h2>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="well">
+      <h3 align="center">
+        Title: <%= @topic.name %>
+      </h3>
+      <p align="center"><%= image_tag @topic.picture.url, class: "showImage" if @topic.picture? %></p>
+      <h4 align="center">
+        Description: <%= @topic.description %>
+      </h4>
+       <% if logged_in? %>
+         <%= render 'comments/newcomment' %>
+       <% end %>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h4>Comments:</h4>
+            <div class="comment-bar">
+              <% if @topic.comments.count > 0 %>
+            <div id="messages">
+               <span class="createdHeader"><%= render partial: 'comments/comments', object: @comments %></span>
+            </div>
+            <% else %>
+              <h5>No Comments Yet..</h5>
+            <% end %>
+            </div>
+          </div>
+        </div>
+      <br />
+      
+      <p><%= link_to "Index", topics_path, class: "btn btn-primary bttn" %>
+         <%= link_to "Edit", edit_topic_path, class: "btn btn-warning bttn" %>
+         <%= link_to "Delete", topic_path(@topic), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger bttn" %></p>
+    </div>
+  </div>
+</div>
+
+<%= render 'layouts/footer' %>

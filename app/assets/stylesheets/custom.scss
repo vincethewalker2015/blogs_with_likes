@@ -1,0 +1,344 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* All Pages */
+
+body {
+  background: #008000;
+
+
+
+  background-size: cover;
+ }
+ 
+ .home-body {
+    border: 10px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
+    border-radius: 15px;
+ }
+
+/* Pages Section */
+.jumbotron {
+  background-color: transparent;
+  color: #fff;
+  
+}
+
+/* Topics Section */
+
+.well {
+  background-color: transparent;
+  border: 3px solid white;
+  color: #fff;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.flashes {
+  margin-top: 40px;
+}
+
+/* Nav Bar */
+
+.nav-button {
+  color: white !important;
+  font-weight: bold;
+  font-size: 14px;
+  visibility: visible !important;
+  border: 2px solid white;
+}
+
+.nav-text {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3e2c7+0,c19e67+50,b68d4c+51,e9d4b3+100;L+Brown+3D */
+color: #f3e2c7; /* Old browsers */
+color: -moz-linear-gradient(top, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
+color: -webkit-linear-gradient(top, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */
+color: linear-gradient(to bottom, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */
+}
+.nav-text {
+  margin-left: 10px;
+}
+
+.thumbSize {
+  width: 10%;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 10%;
+  margin-top: 5px;
+
+}
+
+.detail-class {
+  margin-top: 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+  
+
+/* Index page */
+
+.well-index {
+    background-color: transparent;
+    color: #fff;
+}
+
+
+.well.profile-black-white-thin-b {
+    background-color: #e6f7ff;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.index-block {
+  border: 2px solid white;
+  margin-bottom: 8px;
+  padding-bottom: 3px;
+}
+
+.bttn {
+  border: 2px solid white;
+}
+
+
+.texties {
+  font-family: arial;
+}
+
+.spacer {
+  visibility: hidden;
+}
+
+.BoldText {
+  font-weight: bold; 
+  
+}
+
+.descriptionText {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.createdByText {
+  padding-top: 5px;
+}
+.createdHeader {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Form section */
+
+.forn-group .form-control {
+  background-color: transparent;
+  border: 3px solid white;
+  color: #fff;
+  font-weight: bold;
+}
+
+.labled {
+  color: white;
+}
+
+/* Change the placeholder text color */
+ .form-control::-webkit-input-placeholder { color: white; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: white; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: white; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: white; }  /* Microsoft Edge */
+
+/* Show Page */
+
+.image-frame {
+  border: 3px solid white;
+  /*object-fit: cover; */
+  
+  
+}
+
+/* USERS SECTION */
+
+.showImage {
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 30%;
+  height: auto;
+}
+  
+.IndexSize {
+  width: 30%;
+  height: auto;
+  border: 3px solid white;
+  border-radius: 5px;
+   
+}
+
+/* COMMENTS SECTION */
+
+.comment-bar {
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+.comment-block {
+  margin-left: 15px;
+}
+
+.com-bttn {
+  border: 2px solid white;
+  margin-left: 15px;
+}
+
+.com-form {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+#messages {
+  padding-left: 5px;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  color: #fff;
+  margin-top: 300px;
+}
+
+
+
+  
+/* REDUCING SCREEN SIZES THROUGH DIFFERENT BROWSER WINDOWS */
+
+/* IPHONES */
+  
+ /* For I phoneX */
+ 
+ @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 812px) {
+    
+    img {
+    width: 100%;
+    height: auto;
+}
+.lable-disappear {
+    display: none
+  }
+  
+}
+
+ /* For I phone 6/7/8 */
+ 
+ @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 667px) {
+     img {
+    width: 100%;
+    height: auto;
+}
+.index-block{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.lable-disappear {
+    display: none
+  }
+    
+  }
+  
+ /* For I phone 6/7/8 Plus versions */
+ 
+ @media only screen 
+  and (min-device-width : 414px) 
+  and (max-device-width : 736px) {
+     img {
+    width: 100%;
+    height: auto;
+}
+.lable-disappear {
+    display: none
+  }
+    
+  }
+  
+  /* For I Phone 5's */
+  
+  @media only screen 
+  and (min-device-width : 320px) 
+  and (max-device-width : 568px) {
+    img {
+    width: 100%;
+    height: auto;
+}
+.index-block{
+  margin-left: 20px;
+  margin-right: 20px;
+}  
+.lable-disappear {
+    display: none
+  }
+}
+
+                                              /* IPADS  */
+
+/* Ipad */
+
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) {
+     img {
+      width: 100%;
+      height: auto;
+  }
+  .detail-class {
+   display: none !important;
+}
+  .lable-disappear {
+    display: none
+  }
+}
+
+/* Ipad 3 & 4 */
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    img {
+      width: 100%;
+      height: auto;
+  }
+  .lable-disappear {
+    display: none
+  }
+  }
+  
+  /* Ipad 1 & 2 */
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    img {
+      width: 100%;
+      height: auto;
+  }
+  .lable-disappear {
+    display: none
+  }
+  }
+  
+  /* Ipad Mini */
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    img {
+      width: 100%;
+      height: auto;
+  }
+  .lable-disappear {
+    display: none
+  }
+  }

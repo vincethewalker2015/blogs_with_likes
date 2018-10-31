@@ -1,0 +1,30 @@
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+          <nav>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+             	 	<span class="icon-bar"></span>
+              	<span class="icon-bar"></span>
+              	<span class="icon-bar"></span>                        
+            </button>
+         <div class="collapse navbar-collapse" id="myNavbar">
+           <ul class="nav navbar-nav navbar-left">
+             <% if logged_in? %>
+               <li class="detail-class"><%= image_tag current_user.picture.url, class: "thumbSize" if current_user.picture? %>
+               <span class="nav-text"><%= current_user.name if current_user %> <%= "(Admin)" if current_user.admin? %></span></li>
+             <% end %>
+           </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to "Home", root_path %></li>
+              <li><%= link_to "Create Your Profile", new_user_path %></li>
+              <li><%= link_to "Create a Blog", new_topic_path %></li>
+              <li><%= link_to "All Blogs", topics_path %></li>
+              <% if logged_in? %>
+                <li><%= link_to "Log out", login_path, method: :delete, class: "btn btn-danger nav-button" %></li>
+              <% else %>
+                <li><%= link_to "Log in", login_path, class: "btn btn-success nav-button" %></li>
+              <% end %>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header> <br />
