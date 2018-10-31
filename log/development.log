@@ -34455,3 +34455,43 @@ Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrad
 Registered connection (Z2lkOi8vd2Fsa2VyLWdyb3VwL1VzZXIvMQ)
 CommentsChannel is transmitting the subscription confirmation
 CommentsChannel is streaming from comments
+Started GET "/" for 94.1.248.117 at 2018-10-31 13:04:40 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered layouts/_footer.html.erb (0.7ms)
+  Rendered pages/home.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 454ms (Views: 440.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 94.1.248.117 at 2018-10-31 13:04:43 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 94.1.248.117 at 2018-10-31 13:04:43 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vd2Fsa2VyLWdyb3VwL1VzZXIvMQ)
+CommentsChannel is transmitting the subscription confirmation
+CommentsChannel is streaming from comments
+Started GET "/" for 94.1.248.117 at 2018-10-31 14:04:00 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered pages/home.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.8ms)
+Completed 200 OK in 423ms (Views: 409.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 94.1.248.117 at 2018-10-31 14:04:02 +0000
+Cannot render console from 94.1.248.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 94.1.248.117 at 2018-10-31 14:04:02 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vd2Fsa2VyLWdyb3VwL1VzZXIvMQ)
+CommentsChannel is transmitting the subscription confirmation
+CommentsChannel is streaming from comments
