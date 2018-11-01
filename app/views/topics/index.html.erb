@@ -21,6 +21,15 @@
                    <% end %><br />
                    <p class="createdByText"><span class="createdHeader">created by:</span> <%=top.user.name %></p>
                        <small>Comments: <%= top.comments.count %></small></p>
+                       <div class="text-center liking">
+                          <%= link_to like_topic_path(top, like: true), class: "labled", method: :post do %>
+                          <i class="glyphicon glyphicon-thumbs-up"></i>
+                          <% end %> <%= top.thumbs_up_total %><span class="spacer">####</span>
+                          <%= link_to like_topic_path(top, like: false), class: "labled", method: :post do %>
+                          <i class="glyphicon glyphicon-thumbs-down"></i>
+                          <% end %> <%= top.thumbs_down_total %>
+                          </div>
+                        </div>
                  </div>
                <% end %>
             </div>   

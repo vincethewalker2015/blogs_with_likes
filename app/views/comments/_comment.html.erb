@@ -1,3 +1,4 @@
 <p><%= comment.description %>
 <small class="labled">Created: <%= time_ago_in_words(comment.created_at) %> ago
-                                  by <%= comment.user.name %></small></p><hr />
+                                  by <%= comment.user.name %></small><%= render(partial: 'comments/likes', class: "liking", object: @comments) %></p><hr />
+ 
